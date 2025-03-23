@@ -5,7 +5,7 @@ async function fetchUsers() {
     try {
         const response = await fetch('https://randomuser.me/api/?results=5');
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+             new Error('Network response was not ok');
         }
         const data = await response.json();
         const users = data.results;
